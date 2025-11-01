@@ -1,0 +1,31 @@
+================================================
+DETAILED ANALYSIS FOR REPORT
+================================================
+
+=== ROUND ROBIN ===
+Backend Distribution:
+Backend 1: 40 requests (25.0%)
+Backend 2: 40 requests (25.0%)
+Backend 3: 40 requests (25.0%)
+Backend 4: 40 requests (25.0%)
+Total: 160 requests
+
+Response Time Statistics:
+
+=== LEAST RESPONSE TIME ===
+Backend Distribution:
+Backend 1: 13 requests (8.1%)
+Backend 2: 27 requests (16.9%)
+Backend 3: 50 requests (31.2%)
+Backend 4: 70 requests (43.8%)
+Total: 160 requests
+
+Response Time Statistics:
+
+=== HEALTH CHECK ANALYSIS ===
+Backend 1: 21/21 success (100%), Avg RTT: 15.20 ms, Max RTT: 242.48 ms
+Backend 2: 21/21 success (100%), Avg RTT: 1.53 ms, Max RTT: 9.82 ms
+Backend 3: 21/21 success (100%), Avg RTT: 135.72 ms, Max RTT: 1418.47 ms
+Backend 4: 21/21 success (100%), Avg RTT: 0.75 ms, Max RTT: 3.51 ms
+
+================================================

@@ -1,0 +1,745 @@
+=== Load Balancer Configuration ===
+IP: 127.0.0.1
+Port: 8000
+Algorithm: Round Robin
+Backends:
+  Backend 1: 127.0.0.1:9001
+  Backend 2: 127.0.0.1:9002
+  Backend 3: 127.0.0.1:9003
+  Backend 4: 127.0.0.1:9004
+===================================
+
+[LB] Listening on 127.0.0.1:8000
+[LB] Press Ctrl+C to stop...
+
+[LB] Acceptor thread started
+[HealthChecker] Started
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.480208 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.294833 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.267 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.26625 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.819917 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.386 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.335125 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.281167 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.799958 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.3545 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.322667 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.324625 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 1 (127.0.0.1[LB] Received GET request for small_1.txt
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 2 (127.0.0.1:[LB] Accepted connection from 9002)
+127.0.0.1
+[LB] Selected backend 3 (127.0.0.1:9003)
+:[LB] Received GET request for small_3.txt
+[LB] Accepted connection from 127.0.0.1
+[LB] Selected backend 4 (127.0.0.1:9004)
+9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 9.03158 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 37.7487 ms)
+[LB] Successfully forwarded PUT request (took 40.2466 ms)
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 49.1261 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 55.1055 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 12.537 ms)
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 86.106 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 99.1683 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 0.71075 ms)
+[LB] Successfully forwarded GET request (took 72.2429 ms)
+[LB] Successfully forwarded GET request (took 69.2027 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 1.45408 ms
+[LB] Successfully forwarded PUT request (took 10.5659 ms)
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.416375 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.268709 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.231916 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 74.9405 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 112.052 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 225.581 ms)
+[LB] Successfully forwarded PUT request (took 468.508 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 45.4842 ms)
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 41.03 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 225.277 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 986.263 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 986.676 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 36.235 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 91.8146 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 3.41983 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.728209 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.237459 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.268292 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Received PUT request for medium_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 247.92 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 12.1557 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 0.730125 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 869.268 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.822125 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 9.81938 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 9.67725 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.243875 ms
+[LB] Successfully forwarded GET request (took 914.05 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 10.3095 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 2176.3 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 8.96375 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 1.23533 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 8.99358 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 1.08079 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 11.3643 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 228.467 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 458.425 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 85.0174 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.297083 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.266709 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 4318.08 ms)
+[LB] Successfully forwarded GET request (took 4297.01 ms)
+[LB] Successfully forwarded GET request (took 4334.51 ms)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 400.568 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 427.712 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 4140.66 ms)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 1418.47 ms
+[LB] Successfully forwarded PUT request (took 5652.1 ms)
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.92825 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 5465.97 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.258708 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.285458 ms
+[LB] Successfully forwarded PUT request (took 81.8786 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 635.435 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 787.05 ms
+[LB] Successfully forwarded PUT request (took 5017.23 ms)
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.390833 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 108.903 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 3.25371 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 12.8094 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 416.599 ms)
+[LB] Successfully forwarded PUT request (took 496.797 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 11.2215 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 6.48129 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 2948.21 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 682.988 ms)
+[LB] Successfully forwarded PUT request (took 134.585 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 3.82142 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 2587.91 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 92.8327 ms)
+[LB] Successfully forwarded GET request (took 891.593 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 29.4967 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 387.113 ms)
+[LB] Successfully forwarded GET request (took 29.6155 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.268167 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.208333 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.198416 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.189375 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 36.5508 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 8.26429 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 5.59954 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 98.1386 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 768.056 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 93.6458 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 87.5593 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 53.6116 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 855.16 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 7.42679 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 2.45983 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 7.50288 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 3.50717 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 2391.01 ms)
+[LB] Successfully forwarded GET request (took 2284.57 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 4.59296 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 3.35954 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 6.73675 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 3.27246 ms
+[LB] Received PUT request for large_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 93.3554 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 4.93133 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 2420.26 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 1972.51 ms)
+[LB] Successfully forwarded GET request (took 384.892 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 456.939 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 399.981 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 3.13608 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 9.71458 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 1.35592 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.36975 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 40.516 ms)
+[LB] Successfully forwarded GET request (took 46.6914 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 188.941 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 459.812 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 4328.77 ms)
+[LB] Successfully forwarded PUT request (took 464.554 ms)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 4310.5 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 849.693 ms)
+[LB] Successfully forwarded PUT request (took 549.4 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 39.671 ms
+[LB] Successfully forwarded PUT request (took 232.297 ms)
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.197541 ms
+[LB] Received PUT request for large_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 4624.21 ms)
+[LB] Successfully forwarded PUT request (took 608.336 ms)
+[LB] Successfully forwarded PUT request (took 1407 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 0.394625 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 6.82946 ms)
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 0.2685 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 0.329666 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 4.53533 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 47.3621 ms)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 4.25208 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 2.41858 ms)
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 606.43 ms
+[LB] Successfully forwarded PUT request (took 3761.81 ms)
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 2.27046 ms
+[LB] Successfully forwarded PUT request (took 83.1575 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 1.89879 ms)
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 6.36983 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 2.99354 ms)
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 911.435 ms)
+[LB] Successfully forwarded PUT request (took 311.555 ms)
+[LB] Successfully forwarded PUT request (took 284.438 ms)
+[LB] Successfully forwarded GET request (took 178.871 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 1.99667 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 0.563834 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 212.409 ms)
+[LB] Successfully forwarded GET request (took 236.36 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 11.6269 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 1207.74 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 2.34567 ms)
+[LB] Successfully forwarded PUT request (took 437.297 ms)
+[LB] Successfully forwarded PUT request (took 62.048 ms)
+[LB] Received PUT request for large_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_2.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 7.633 ms)
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 15.4788 ms)
+[LB] Successfully forwarded GET request (took 19.1468 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Received PUT request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded PUT request (took 17.2631 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for medium_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 81.667 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 638.561 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for xlarge_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 488.511 ms)
+[LB] Successfully forwarded PUT request (took 1257.06 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 242.484 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.479542 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.242167 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.233459 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 516.666 ms)
+[LB] Successfully forwarded GET request (took 10.8447 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 884.648 ms)
+[LB] Successfully forwarded GET request (took 19.6348 ms)
+[LB] Received PUT request for medium_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 91.1294 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 3.35446 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for xlarge_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Received PUT request for large_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 163.684 ms)
+[LB] Successfully forwarded PUT request (took 272.714 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_3.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 4.49321 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 910.857 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded PUT request (took 1317.58 ms)
+[LB] Successfully forwarded GET request (took 258.586 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 2.02763 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Accepted connection from 127.0.0.1
+[LB] Successfully forwarded GET request (took 4.90221 ms)
+[LB] Received PUT request for medium_1.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 8.52267 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for .DS_Store
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded PUT request (took 6.96017 ms)
+[LB] Successfully forwarded GET request (took 196.219 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for large_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 84.3465 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_3.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 2.49037 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for .DS_Store
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 3.70213 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded PUT request (took 8.97221 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for small.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 0.240917 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_2.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 217.057 ms)
+[LB] Successfully forwarded GET request (took 93.3912 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Successfully forwarded GET request (took 92.1168 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.276834 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.194542 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.219167 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.204542 ms
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 4.72642 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded GET request (took 1.09458 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for small.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 0.341667 ms)
+[LB] Successfully forwarded GET request (took 211.116 ms)
+[LB] Received PUT request for large_3.txt
+[LB] Selected backend 1 (127.0.0.1:9001)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for medium_1.txt
+[LB] Selected backend 2 (127.0.0.1:9002)
+[LB] Successfully forwarded GET request (took 3.93763 ms)
+[LB] Successfully forwarded PUT request (took 358.727 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received PUT request for medium_2.txt
+[LB] Selected backend 3 (127.0.0.1:9003)
+[LB] Successfully forwarded PUT request (took 14.4453 ms)
+[LB] Accepted connection from 127.0.0.1
+[LB] Received GET request for large_3.txt
+[LB] Selected backend 4 (127.0.0.1:9004)
+[LB] Successfully forwarded GET request (took 169.802 ms)
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.775583 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.359709 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.353584 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.312625 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.806333 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.355833 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.360375 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.341875 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.769292 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.342667 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.357958 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.376958 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.796708 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.368291 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.378083 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.365584 ms
+[HealthCheck] Backend 1 (127.0.0.1:9001) RTT: 0.811459 ms
+[HealthCheck] Backend 2 (127.0.0.1:9002) RTT: 0.391083 ms
+[HealthCheck] Backend 3 (127.0.0.1:9003) RTT: 0.363833 ms
+[HealthCheck] Backend 4 (127.0.0.1:9004) RTT: 0.380166 ms
+
+[LB] Received signal 2, shutting down...
+[LB] Acceptor thread exiting
+[HealthChecker] Stopped
+[LB] Shutdown complete
